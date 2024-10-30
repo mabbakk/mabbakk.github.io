@@ -1,0 +1,515 @@
+@import url('reset.css');
+
+* {
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: "Noto Sans KR", "돋움", dotum, sans-serif;
+}
+
+/* header */
+header {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    position: fixed;
+    height: 150px;
+    width: 100%;
+    z-index: 1000;
+}
+header nav.tnb {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 58px;    
+    border-bottom: 1px solid #eaeaea;
+}
+header nav.tnb .links {
+    display: flex;
+    margin-right: 25%;
+    align-items: center;
+    justify-content: center;
+}
+header nav.tnb .links .lang {
+    display: flex;
+    background: url("https://www.monami.com/images/common/lang_kor.gif") no-repeat 12%,
+    url("https://www.monami.com/images/common/lang_arr.gif") no-repeat 80%;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 30px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+}
+header nav.tnb .links .lang a {
+    font-size: 0.7rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    text-decoration: none;
+}
+header nav.tnb .links nav.sns ul {    
+    display: flex;
+    margin: 10px 10px;
+}
+header nav.tnb .links nav.sns ul li {   
+    margin: 0px 4px;
+}
+header nav.tnb nav.top-menu ul {   
+    display: flex;
+}
+header nav.tnb nav.top-menu ul li:not(:first-child){    
+    margin-left: 10px;
+    padding-left: 10px;
+    background: url("https://www.monami.com/images/common/tm_bar.gif") no-repeat left; 
+}
+header nav.tnb nav.top-menu ul li a {  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    color: #9b9a9a;  
+    text-decoration: none;
+}
+
+header nav.gnb {
+    /* background: greenyellow; */
+    display: flex;
+    justify-content: center;
+}
+header nav.gnb h1 {
+    width: 12%;
+}
+header nav.gnb h1 a {
+    /* background: red; */
+    display: block;
+}
+header nav.gnb .tab-bar {
+    width: 54%; 
+    /* background: lightgray; */
+    display: flex; 
+    align-items: center;
+}
+header nav.gnb .tab-bar ul {
+    display: flex;  
+    width: 100%;
+}
+header nav.gnb .tab-bar ul li {
+    /* background: white; */
+    flex: 1;
+    text-align: center;
+}
+header nav.gnb .tab-bar ul li {
+    /* background: white; */
+    flex: 1;
+    text-align: center;
+}
+header nav.gnb .tab-bar ul li:first-child {
+    /* background: yellow; */
+}
+header nav.gnb .tab-bar ul li a {
+    font-size: 1.1rem;
+    color: #303030;
+    text-decoration: none;
+    /* 이거 왜 전체 속성 상속 안 받지? */
+    font-family: "Noto Sans KR", "돋움", dotum, sans-serif;
+}
+header nav.gnb .tab-bar ul li:nth-child(3) {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+header nav.gnb .search-bar {
+    width: 8%;
+    /* background: green; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header nav.gnb .search-bar ul li img {
+    margin: 0px 10px;
+}
+header nav.gnb .search-bar .show-all-icon {
+    margin-left: 20px;
+    display: flex;               
+    flex-direction: column;      
+    justify-content: center;     
+    align-items: center;         
+    width: 30px;                 
+    height: 30px;                
+}
+header nav.gnb .search-bar .show-all-icon .icon-line {
+    width: 20px;                 
+    height: 2px;                 
+    background-color: black;     
+    margin: 3px 0;              
+}
+/* end header */
+
+/* main */
+main {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    position: relative;
+}
+/* section.page-title */
+main section.page-title {
+    height: 342px;
+    width: 100%;
+    background: url('https://www.monami.com/images/page/page_visual1.jpg') no-repeat center/cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+main section.page-title .intro {
+    color: white;
+    text-align: center;
+}
+main section.page-title .intro h2 {
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+main section.page-title .intro h2::after {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 4px;
+    margin: 5px auto;
+    background: #c40f39;
+}
+main section.page-title .intro p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+/* end section.page-title */
+
+/* section.page-tabs */
+main section.page-tabs {
+    height: 58px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50%); /* 본인 높이의 절반만큼 위로 이동 */    
+}
+main section.page-tabs ul {
+    text-align: center;
+    font-size: 1rem;
+    align-items: center;
+    display: flex;
+    background: white;
+}
+main section.page-tabs ul li {
+    font-size: 0.95rem;
+    color: #666;
+    width: 175px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;    
+}
+main section.page-tabs ul li:nth-child(7) {
+    background: #c40f39;
+    color: white;
+}
+main section.page-tabs ul li:last-child {
+    border-right: 1px solid #ddd;  
+}
+/* end section.page-tabs */
+
+/* section.contact */
+main section.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main section.contact>h2 {
+    margin: 60px auto;
+    font-size: 2.3rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+main section.contact>h2>span {
+    color: #c40f39;
+}
+main section.contact>h2::after {
+    display: block;
+    content: "";
+    width: 30px;
+    height: 4px;
+    margin: 5px auto 35px;
+    background: #c40f39;
+}
+main section.contact .contact-info {
+    width: 1400px;
+    height: 600px;
+    /* border 겹치는 줄 수정 필요  */
+    border: 1px solid lightgray;
+    display: flex;
+}
+main section.contact .contact-info .map {
+    width: 900px;
+    height: 600px;
+    border: 1px solid #ddd;
+    background: url("map_image.png") no-repeat center/cover;
+}
+main section.contact .contact-info .info {
+    width: 520px;
+    height: 600px;
+    border: 1px solid lightgray;
+    position: relative;
+    background: #363636;
+    color: white;
+}
+main section.contact .contact-info .info .info-text {
+    padding-left: 50px;
+}
+main section.contact .contact-info .info .info-text .info-title {
+    margin: 60px auto 5px;
+}
+main section.contact .contact-info .info .info-text .info-title h3 {
+    margin-top: 5px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+main section.contact .contact-info .info .info-text .info-title h3::after {
+    display: block;
+    content: "";
+    width: 25px;
+    height: 3px;
+    margin: 10px 0 35px;
+    background: #fff;
+}
+main section.contact .contact-info .info .info-text ul {
+    font-size: 0.95rem;
+    margin: 40px auto;
+    line-height: 1.8;
+}
+main section.contact .contact-info .info .info-text ul li {
+    display: flex;
+}
+main section.contact .contact-info .info .info-text ul li em {
+    font-weight: 400;
+    width: 90px;
+}
+main section.contact .contact-info .info .info-text ul li p {
+    font-weight: 300;
+    width: 300px;
+}
+main section.contact .contact-info .info #head-office img {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+main section.contact .traffic {    
+    width: 1400px;
+    height: 250px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 160px;
+}
+main section.contact .traffic .box {   
+    width: 50%; 
+    border-right: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+}
+main section.contact .traffic .box .method {    
+    height: 120px;
+    width: 110px;
+    /* 경계선 확인용도 */
+    /* border: 1px solid black; */
+    position: relative;  
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+}
+main section.contact .traffic #car .method {
+    background: url("https://www.monami.com/images/page/location_bg1.gif") no-repeat center;
+}
+main section.contact .traffic #public-trp .method {  
+    background: url("https://www.monami.com/images/page/location_bg2.gif") no-repeat center;
+}
+main section.contact .traffic .method p { 
+    position: absolute;
+    bottom: 0px;
+    font-size: 0.95rem;
+    color: #c40f39;
+    font-weight: 500;
+}
+main section.contact .traffic .guide-text {  
+    /* 경계선 확인용도 */
+    /* border: 1px solid #000; */
+    width: 430px;
+    height: auto;
+    color: #777;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    padding-top: 30px;
+}
+main section.contact .traffic .guide-text ul li {  
+    padding-left: 15px;
+    display: flex;
+    background: url("https://www.monami.com/images/page/list_bg1.gif") no-repeat left 11px;
+}
+main section.contact .traffic #car .guide-text {  
+    height: 50%;git 
+    display: flex;
+    align-items: center;
+}
+main #btn-top {  
+    position: fixed;
+    right: 3%;
+    bottom: 30%;
+    z-index: 100;
+}
+main #btn-top img {  
+    border: 2px solid #c40f39;
+}
+/* end section.contact */
+/* end main */
+
+/* footer */
+footer {
+    background: #111;
+    padding: 60px 0 65px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer .f-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: greenyellow; */
+    width: 74%;
+    margin: 0 auto;
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.1);
+    padding-bottom: 30px;
+  }
+  footer .f-top .btm-menu ul {
+    display: flex;
+  }
+  footer .f-top .btm-menu ul li:not(:last-child) {
+    margin-right: 10px;
+    background: url('https://www.monami.com/images/common/fm_bar.gif') no-repeat right center; 
+  }
+  footer .f-top .btm-menu ul li a {
+    margin-right: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.80rem;
+    text-decoration: none;
+  }
+  footer .f-top .btm-menu ul li:nth-child(2) a {
+    color: #fff;
+  }
+  
+  footer .f-btm {
+    padding-top: 20px;
+    display: flex;
+    /* background: skyblue; */
+    width: 75%;
+    margin-left: 12%;
+  }
+  footer .f-btm:last-child {
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer .f-btm .info {
+    width: 43%;
+    /* background: orange; */
+  }
+  footer .f-btm .info h2 {
+    font-size: 0.95rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+  }
+  footer .f-btm .info p { 
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 0.85rem;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  footer .f-btm .info p span { 
+    margin: 0px 10px;
+  }
+  
+  footer .f-btm .customer-center { 
+    width: 39%;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer .f-btm .customer-center h2 { 
+    font-size: 0.95rem;
+    font-family: 'Montserrat', sans-serif;
+    margin: 2px 0;
+  }
+  footer .f-btm .customer-center p { 
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 12px 0;
+  }
+  footer .f-btm .customer-center a { 
+    display: inline-flex;
+    border: 1px solid #878787;
+    font-size: 0.8rem;
+    color: #dfdfdf;
+    background: #4a4a4a;
+    border-radius: 6px;
+    text-decoration: none;
+  
+    width: 155px;
+    height: 32px;
+    line-height: 31px;
+    text-align: center;
+    margin: 5px 0;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .f-btm .customer-center a::after { 
+    content: "";
+    background: url('https://www.monami.com/images/common/family_arr.png') no-repeat center;
+    transform: rotate(-450deg);
+    width: 20px; 
+    height: 20px; 
+    display: inline-block; 
+  }
+  footer .f-btm .family-site { 
+    /* background: green; */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    width: 242px;
+    height: 34px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    position: relative;
+  }
+  footer .f-btm .family-site a { 
+    display: flex;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.4);
+    text-decoration: none;    
+  }
+  footer .f-btm .family-site a::after { 
+    color: rgba(255, 255, 255, 0.4);
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: url("https://www.monami.com/images/common/family_arr.png") no-repeat center;
+    position: absolute;
+    right: 3%;
+    bottom: 20%;
+    transform: scaleY(-1);
+  }
+/* end footer */

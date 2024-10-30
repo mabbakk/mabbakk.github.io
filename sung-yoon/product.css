@@ -1,0 +1,759 @@
+@import url(common.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+  font-family:"Noto Sans KR", "돋움", sans-serif;;
+}
+/* =======header============ */
+body header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 1000;
+}
+header .head{
+  border-bottom: 1px solid #eaeaea;
+}
+.head_top{
+  height: 58px;
+  border-bottom: 1px solid #eaeaea;
+}
+.conwrap{
+  min-width: 1400px;
+  width: 94%;
+  margin: 0 auto;
+  position: relative;
+}
+.head_top .links{
+  overflow: hidden;
+  float: left;
+  margin-top: 14px;
+}
+.head_top .links .lang{
+  position: absolute;
+  left: 0;
+  top: 14px;
+  z-index: 100;
+  float: left;
+  width: 86px;
+  height: 30px;
+  padding-top: 7px;
+  overflow: hidden;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+}
+.head_top .links .lang .this_lang{
+  padding-left: 15px;
+  background: url("https://www.monami.com/images/common/lang_kor.gif") no-repeat 10px center;
+}
+.head_top .links .lang a{
+  display: block;
+  width: 52px;
+  padding-left: 15px;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 11px;
+  color: #000;
+  background: url("https://www.monami.com/images/common/lang_arr.gif") no-repeat right center;
+}
+.head_top .links .sns{
+  float: left;
+  padding-left: 93px;
+}
+
+.head_top .links .sns ul{
+  overflow: hidden;
+}
+.head_top .links .sns ul li{
+  float: left;
+  margin-left: 7px;
+}
+.topmenu{
+  float: right;
+  margin-top: 20px;
+}
+.topmenu ul{
+  overflow: hidden;
+}
+.topmenu ul li:nth-child(1){
+  background: 0;
+}
+.topmenu ul li{
+  float: left;
+  margin-left: 10px;
+  padding-left: 12px;
+  background: url("https://www.monami.com/images/common/tm_bar.gif") no-repeat left center;
+}
+.topmenu ul li a{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 11px;
+  color: #9b9a9a;
+}
+.conwrap::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.head .gnb{
+  min-width: 1262px;
+  margin: 0 auto;
+}
+.head .gnb h1{
+  float: none;
+  width: 162px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.head .gnb .nav{
+  float: none;
+  margin: 0 auto;
+  width: calc(100% - 162px - 66px);
+  display: flex;
+  justify-content: space-between;
+  
+}
+.head .gnb .nav>ul{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  
+}
+.head .gnb .nav>ul:before{
+  content: "";
+  width: calc(100% + 450px + 450px);
+  height: 425px;
+  position: absolute;
+  left: -450px;
+  top: 89px;
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(255,255,255,0.95);
+  border-bottom: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+}
+.head .gnb .nav>ul li{
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100%/7);
+  height: 89px;
+  line-height: 89px;
+  font-size: 17px;
+  color: #303030;
+  position: relative;
+}
+.head .gnb .nav>ul li>a{
+  display: block;
+  height: 89px;
+  line-height: 89px;
+  font-size: 17px;
+  color: #303030;
+}
+.head .gnb .search{
+  float: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 162px;
+}
+.head .gnb .search .btn_all{
+  float: right;
+  overflow: hidden;
+  width: 19px;
+  height: 16px;
+  margin-top: 36px;
+  cursor: pointer;
+}
+.head .gnb .search .btn_all>div{
+  width: 100%;
+  height: 2px;
+  margin-bottom: 5px;
+  background: #303030;
+}
+.head .gnb .search .nav_search{
+  overflow: hidden;
+  float: right;
+  text-align: right;
+  margin-right: 18px;
+  margin-top: 36px;
+}
+.head .gnb .search .nav_search a{
+  float: right;
+}
+.head .gnb .search .nav_search input{
+  float: right;
+  width: 0;
+  border: 0;
+  outline: 0;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+/* =========main================== */
+main{
+  margin-top: 148px;
+
+}
+.head .gnb .search{
+  float: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 162px;
+}
+.head .gnb .search .btn_all{
+  float: right;
+  overflow: hidden;
+  width: 19px;
+  height: 16px;
+  margin-top: 36px;
+  cursor: pointer;
+}
+.head .gnb .search .btn_all>div{
+  width: 100%;
+  height: 2px;
+  margin-bottom: 5px;
+  background: #303030;
+}
+.head .gnb .search .nav_search{
+  overflow: hidden;
+  float: right;
+  text-align: right;
+  margin-right: 18px;
+  margin-top: 36px;
+}
+.head .gnb .search .nav_search a{
+  float: right;
+}
+.head .gnb .search .nav_search input{
+  float: right;
+  width: 0;
+  border: 0;
+  outline: 0;
+  margin-left: 10px;
+}
+
+
+
+
+
+
+/* =========main================== */
+main .mainhead{
+  color: white;
+  width: 100%;
+  height: 342px;
+  text-align: center;
+  background: url("https://www.monami.com/images/page/page_visual8.jpg");
+}
+main .mainhead h2{
+  padding-top: 120px;
+  font-size: 34px;  
+  font-weight: 500;
+}
+main .mainhead h2::after{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 10px auto 10px;
+  background: #c40f39;;
+
+}
+main .mainhead h2 p{
+  font-size: 15px;
+  font-weight: 300;
+}
+main .pagetab{
+  max-width: 1400px;
+  width: 100%;
+  margin: -29px auto 85px;
+}
+main .pagetab ul{
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  overflow: hidden;
+}
+main .pagetab li{
+  color: #555;
+  width: 50%;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 17px;
+  font-weight: 300;
+}
+main .pagetab li:nth-child(2){
+  background: #c40f39;
+  color: white;
+}
+main h3{
+  font-family: 'montserrat', sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+  text-align: center;
+}
+main h3 span{
+  color: #c40f39;
+}
+main h3::after{
+  content: "";
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 10px auto 10px;
+  background: #c40f39;
+}
+main .industry{
+  width: 1400px;
+  margin: 0 auto;
+  color: #555;
+}
+main .industry h4{
+  font-size: 26px;
+  margin: 30px 0;
+}
+main .industry h4 span{
+  color: white;
+  background: #c40f39;
+  margin-top: 5px;
+  text-align: center;
+  margin-right: 5px;
+  font-size: 20px;
+  line-height: 29px;
+}
+main .industry p{
+  font-size: 16px;
+  line-height: 180%;
+  margin-bottom: 40px;
+}
+main .industry .content1 .content1bg{
+  width: 100%;
+  height: 600px;
+  background: url("https://www.monami.com/images/page/industry_img_1.jpg") no-repeat;
+  background-size: 100% 100%;
+  align-content: center;
+  margin-bottom: 30px; 
+}
+.bgarea1{
+  display: block;
+  top: 1050px;
+  width: 100%;
+  height: 1050px;
+  background: #f8f8f8;
+  position: absolute;
+  z-index: -1;
+  margin-bottom: 0;
+}
+main .industry .content1 ul{
+  width: 500px;
+  height: 250px;
+  background: rgba(0,0,0,0.35);
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 150%;
+}
+main .industry .content1 ul li{
+  margin: auto  ;
+  color: white;
+}
+main .industry .content1 ul li span{
+  width: 37px;
+  height: 55px;
+  display: block;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+main .industry .content1 ul li .icon1{
+  background: url("https://www.monami.com/images/page/industry_icon.png");
+}
+main .industry .content1 ul li .icon2{
+  background: url("https://www.monami.com/images/page/industry_icon.png");
+  width: 48px;
+  background-position: -38px;
+}
+main .industry .content1 ul li .icon3{
+  background: url("https://www.monami.com/images/page/industry_icon.png");
+  width: 43px;
+  background-position: -87px;
+}
+/* 컨텐츠2 */
+main .industry .process{
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+  display: block;
+}
+main .industry .process ol{
+  height: 540px;
+  margin: 100px 0 0 2px;
+  position: relative;
+}
+main .industry .process ol li{
+  height: 217px;
+  min-width: 300px;
+  position: absolute;
+  line-height: 180%;
+}
+main .industry .process ol li span{
+  display: block;
+  position: absolute;
+}
+main .industry .process ol li>div{
+  position: absolute;
+  width: 174px;
+  height: 7px;
+  left: 3px;
+  background: #ededed;
+}
+main .industry .process ol li:nth-child(odd){
+  top: 0;
+  background: url("https://www.monami.com/images/page/industry_line_1.png") no-repeat;
+  background-position: left bottom;
+}
+main .industry .process ol li:nth-child(odd)>div{
+  top: 210px;
+
+}
+main .industry .process ol li:nth-child(even){
+  top: 210px;
+  background: url("https://www.monami.com/images/page/industry_line_2.png") no-repeat;
+  background-position: left top;
+}
+
+main .industry .process ol li span.num{
+  bottom: 0;
+  left: -8px;
+  font-size: 24px;
+  color: #c40f39;
+  font-family: 'Montserrat',sans-serif;
+  position: absolute;
+}
+.industry .process ol li:nth-child(odd) span.num{
+  top: 0;
+}
+body main .industry .process ol li span.tit{
+  top: 48px;
+  left: 20px;
+  font-size: 17px;
+  color: #000;
+  font-weight: 600;
+
+}
+body main .industry .process ol li span.con{
+  top: 80px;
+  left: 20px;
+  font-size: 14px;
+  color: #777;
+  line-height: 20px;
+}
+main .industry .process ol .process2{
+  left: 171px;
+}
+main .industry .process ol .process1>div{
+  width: 172px;
+}
+main .industry .process ol .process2>div{
+  background: #d4d4d4;
+  width: 174px;
+}
+main .industry .process ol .process3>div{
+  background: #bababa;
+}
+main .industry .process ol .process4>div{
+  background: #969696;
+}
+main .industry .process ol .process5>div{
+  background: #6b6b6b;
+}
+main .industry .process ol .process6>div{
+  background: #4f4f4f;;
+}
+main .industry .process ol .process7>div{
+  background: #383838;
+}
+main .industry .process ol .process8>div{
+  background: #333;
+}
+main .industry .process ol .process3{
+  left: calc(171px + (175px*1));
+}
+main .industry .process ol .process4{
+  left: calc(171px + (175px*2));
+}
+main .industry .process ol .process5{
+  left: calc(171px + (175px*3));
+}
+main .industry .process ol .process6{
+  left: calc(171px + (175px*4));
+}
+main .industry .process ol .process7{
+  left: calc(171px + (175px*5));
+}
+main .industry .process ol .process8{
+  left: calc(171px + (175px*6));
+}
+main .industry .process a{
+  display: inline-block;
+  width: 237px;
+  height: 64px;
+  line-height: 66px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #3f3f3f;
+  text-align: center;
+  border: 1px solid #b7b7b7;
+  background: #fff;
+  margin-left: 50%;
+  transform: translate(-50%,-100%);
+}
+/* 컨텐츠3 */
+
+ main .content3{
+  position: relative;
+ }
+ main .content3>a{
+  position: absolute;
+  font-size: 14px;
+  top: -42px;
+  right: 0;
+  padding-right: 17px;
+ }
+ main .content3 .bigsize>li:nth-child(odd){
+  margin-right: 60px;
+ }
+ main .content3 ul li img{
+  width: 663px;
+  height: 490px;
+  border: 1px solid #e5e5e5;
+  display: block;
+ }
+ main .content3 .bigsize li{
+   width: 665px;
+    display: inline-block;
+
+  }
+  main .content3 .bigsize li h5{
+    display: block;
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 45px 0;
+  }
+  main .content3 .bigsize li span{
+    color: #afafaf;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  main .content3 .bigsize ul li{
+    font-size: 14px;
+    color: #333;
+    line-height: 180%;
+  }
+  main .content3 li>div{
+    width: calc(100% - 3px);
+    height: 356px;
+    padding-left: 3px;
+    background-position: right bottom !important;
+  }
+  main .content3 .bigsize li:nth-child(1)>div{
+    background: url("https://www.monami.com/images/page/industry_prd_big_1.png") no-repeat;
+  }
+  main .content3 .bigsize li:nth-child(2)>div{
+    background: url("https://www.monami.com/images/page/industry_prd_big_2.png") no-repeat;
+  }
+  main .content3 .bigsize li:nth-child(3)>div{
+    
+    background: url("https://www.monami.com/images/page/industry_prd_big_3.png") no-repeat;
+  }
+  main .content3 .bigsize li:nth-child(4)>div{
+    background: url("https://www.monami.com/images/page/industry_prd_big_4.png")   no-repeat;
+  }
+  main .content3 .smallsize{
+    margin-top: 100px;
+  }
+  main .content3 .smallsize>li{
+    width: 438px;
+    height: 498px;
+    border: 1px solid #dadada;
+    margin: 0 0 40px 36px;
+  }
+  main .content3 .smallsize>li>a img{
+    width: 438px;
+    height: 360px;
+  }
+  main .content3 .smallsize>li:nth-child(1){
+    margin: 0 0 40px 0;
+  }
+  main .content3 .smallsize>li:nth-child(4){
+    margin: 0 0 40px 0;
+  }
+    main .content3 .smallsize>li>div{
+      width: calc(100%-100px);
+      padding: 30px 50px;
+    }
+    main .content3 .smallsize>li h5{
+      font-size: 16px;
+      font-weight: 600;
+      color: #000;
+      line-height: 30px;
+    }
+    main .content3 .smallsize>li span{
+      font-size: 13px;
+      color: #dbdbdb;
+      display: block;
+    }
+    .content3 ul li{
+      display: inline-block;
+      vertical-align: top;
+    }
+    /* ========= footer ================== */
+    footer{
+      width: 100%;
+      position: relative;
+      background: #111;
+      padding: 60px 0 65px;
+    }
+    .foot{
+      max-width: 1400px;
+      width: 94%;
+      margin: 0 auto;
+      padding: 0 3%;
+    }
+    .foot_top{
+      width: 100%;
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .foot_top h1{
+      float: left;
+    }
+    .foot_top .fm{
+    float: right;
+    overflow: hidden;
+    }
+    .foot_top .fm>li{
+      color: rgba(255,255,255,0.5);
+      float: left;
+      padding-right: 11px;
+      margin-right: 10px;
+      background: url("https://www.monami.com/images/common/fm_bar.gif") no-repeat right center;
+    }
+    .foot_top .fm>li:nth-child(2){
+      color: white;
+    }
+.foot_top::after{
+  display: block;
+  content:"";
+  clear: both;
+}
+.foot_btm{
+  width: 100%;
+  padding-top: 20px;
+}
+.foot_btm .cc{
+  display: inline-block;
+
+}
+.foot_btm .info{
+  display: inline-block;
+
+  float: left;
+  margin-right: 55px;
+}
+.foot_btm .tit{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 15px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.foot_btm .info address{
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.3);
+  margin-bottom: 10px;
+}
+.foot_btm .info .copy{
+  font-size: 12px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.3);
+}
+.foot_btm .cc .cc_tel{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 24px;
+  color: rgba(255,255,255,0.5);
+}
+.foot_btm .btn_kakao{
+  display: inline-block;
+  width: 155px;
+  height: 32px;
+  margin-top: 15px;
+  color: #dfdfdf;
+  text-align: center;
+  border: 1px solid #878787;
+  background: #4a4a4a;
+  border-radius: 6px;
+  align-content: center;
+}
+.foot_btm .btn_kakao::after{
+  display: inline-block;
+  content: "";
+  width: 9px;
+  height: 5px;
+  margin: 0 0 2px 5px;
+  background: url("https://www.monami.com/images/common/family_arr.png") no-repeat;
+  background-size: cover;
+  transform: rotate(-450deg);
+}
+.foot_btm .fam_site{
+  float: right;
+  position: relative;
+  width: 242px;
+  height: 34px;
+  text-align: left;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 5px;
+}
+.foot_btm .fam_site>a{
+  display: block;
+  padding: 0 13px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.4);
+  position: relative;
+}
+.foot_btm .fam_site::after{
+  display: block;
+  content: "";
+  width: 9px;
+  height: 5px;
+  margin: 0 0 2px 5px;
+  background: url("https://www.monami.com/images/common/family_arr.png") no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+}
+.foot_btm::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.foot::after{
+  display: block;
+  content: "";
+  clear: both;
+} 

@@ -1,0 +1,591 @@
+
+header{  
+
+ padding: 20px 250px 0px 250px;
+ position: fixed;
+ top: 0;
+ right: 0;
+ left: 0;
+ background: white;
+}
+header .header-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-top .header-top-left{
+  display: flex;
+}
+
+header .header-top select{
+  width: 70px;
+  border: none;
+  font-size: 12px;
+}
+header .header-top .language-line{
+  
+  padding: 5px;
+  border: 0.5px solid #eaeaea;
+  border-radius: 10px;
+}
+header .header-top .sns{
+
+  width: 110px;
+  display: flex;
+  margin-left: 10px;
+  justify-content: space-between;
+
+}
+header .header-top-right{
+  font-size: 12px;
+  color: #bcbcbc;
+}
+header .header-top-right a{
+  padding-left: 8px;
+  padding-right: 8px;
+}
+header .header-top-right .right-line{
+  border-right: 1px solid #dad7d7;
+  
+}
+header .header-bottom {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+header .header-bottom .logo{
+  
+  width: 15%;
+
+}
+header .header-bottom nav {
+  font-size: 17px;
+  font-weight: 500;
+  width: 75%;
+  padding-top: 30px;
+}
+header .header-bottom nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+header .header-bottom .icons{
+  display: flex;
+  width: 5%;
+  padding-top: 30px;
+  justify-content: space-around;
+  
+}
+
+
+/* ==================main-section시작====================== */
+
+main .main-section{
+  
+  height: 650px;
+  padding-top:150px;
+}
+main .background-image {
+  background: url(https://www.monami.com/images/main/visual1.jpg) no-repeat; 
+
+  width: 100%;
+}
+main .main-section .background-image .background-image-textarea {
+  
+  height: 650px;
+  position: relative;
+}
+main .main-section .background-image .img-box-text{
+  position: absolute;
+  top:160px;
+  left: 380px;
+
+}
+main .main-line{
+  margin-bottom: 20px;
+  width: 80px;
+  border-bottom: 1px solid white;
+}
+main .main-text h1 {
+ color: white;
+ font-size: 48px;
+ font-weight: 200;
+ line-height: 1.2;
+
+}
+main p {
+    color:rgba(255, 255, 255, 0.8);
+    margin-top: 30px;
+    line-height: 1.3;
+    font-size: 14px;
+    
+
+}
+
+/* =============main-section 종료======================== */
+/* =============new-section 시작======================== */
+
+main .new-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+}
+main .new-section .first-area{
+  display: flex;
+ margin-top: 100px;
+
+/* width: 1300px; */
+}
+
+main .new-section h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: 550;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+main .new-line{
+  width: 30px;
+   border-bottom: 4px solid  #C40F39; 
+  
+}
+main .new-section .first-area h3{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: gray;
+}
+main .new-section img{ 
+  margin-right: 20px;
+  border-radius: 20px;
+}
+main .new-section .new-image2{
+   display: flex; 
+  margin-top: 20px;
+  align-items: flex-start;
+  
+}
+/* ======================new-section 종료=================== */
+/* ======================best-section 시작 ==================*/
+
+main .best-section{
+  margin-top: 100px;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+main .best-section .best-title h3{
+  font-size: 35px;
+  margin-top: 100px;
+  font-weight: 550;
+  letter-spacing: 3px;
+  
+}
+main .best-section .best-line{
+  margin-top: 16px;
+  border-bottom: 4px solid #C40F39 ;
+  width: 30px;
+  margin-left: 130px;
+}
+main .best-section .best-title h4{
+  margin-top: 15px;
+  margin-left: 15px;
+  color: #555;
+  font-size: 14px;
+
+}
+main .best-section .buttons{
+   display: flex; 
+   margin-top: 50px;
+}
+main .best-section button{
+  background-color: #eee;
+  border-radius: 20px;
+  border: 2px solid #bcbcbc;
+  width: 170px;
+  height: 38px;
+  color: #898989;
+  margin-right: 5px;
+  font-weight: 500;
+}
+main .best-section .buttons .red-button button{
+  border-color: #C40F39;
+  color:#C40F39;
+}
+main .best-section button:hover{
+  border-color: #C40F39;
+  color:#C40F39;
+}
+main .best-photos{
+  margin-top: 50px;
+  display: flex;
+}
+main .best-photos img{
+  width: 270px;
+  border-radius: 20px ;
+}
+main .best-section .best-photos li{
+  border-radius: 20px;
+  background: white;
+  height: 500px;
+  margin-right: 20px;
+}
+main .best-section .best-photos .best-text{
+  margin-left: 20px;
+}
+main .best-section .best-photos .best-text p{
+  color:#b3b3b3;
+  font-size: 12px;
+  margin-bottom: 5px;
+} 
+main .best-section .best-photos .best-text h5{
+  font-weight: bold;
+}
+main .best-section .drag-line{
+  display: flex;
+  height: 50px;
+  margin-top: 50px;
+  justify-content: flex-start;
+  width: 100%;
+  
+}
+main .best-section .drag-line .first-line{
+ 
+  border-top: 1px dotted #898989;
+  font-weight: 100;
+  width: 20%;
+  margin-top: 8.5px;
+  
+  
+}
+
+main .best-section .drag-line .second-line{
+  border-top: 1px dotted #898989;
+  font-weight: 100;
+  width: 30%;
+ 
+  margin-top: 8.5px;
+  
+  
+}
+main .best-section .drag-line .cursor{
+margin-left: 20px;
+margin-right: 20px;
+}
+main .best-section .drag-line .third-line{
+  border-top: 1px dotted #898989;
+  font-weight: 100;
+  width: 20%;
+  margin-top: 8.5px;
+ 
+}
+
+main .best-section .drag-line .fourth-line{
+  border-top: 1px dotted #898989;
+  font-weight: 100;
+  width: 30%;
+  margin-top: 8.5px;
+  
+}
+
+body main .best-section .drag-line-info{
+  
+  font-size: 12px;
+  margin-bottom: 80px;
+}
+  
+
+
+   
+/* ==========best-section 끝============== */
+/* ==========video-section 시작============  */
+
+main .video-section img{
+  width: 100%;
+  min-height: 100%;
+  margin: 0 0 0 0; 
+ }
+ /* =========video-section 끝 ============= */
+ /* ========last-section 시작============== */
+main .last-section{
+  display: flex;
+  justify-content: center;
+  height: 350px;
+  
+  
+  
+ 
+}
+main .last-section .monami-news{
+  
+  width: 40%;
+ 
+  
+}
+main .last-section .monami-news .news-title{
+  margin: 30px;
+}
+main .last-section .monami-news .news-title1{
+  display: flex;
+  justify-content: space-between;
+}
+main .last-section .monami-news .news-title h5{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+main .last-section .monami-news .news-title1 a{
+  font-size: 10px;
+  text-decoration: underline;
+  letter-spacing: 1px;
+
+}
+main .last-section .monami-news .news-title .news-line{
+  margin-top: 10px;
+  width: 25px;
+  border-bottom: 4px solid #C40F39;
+}
+main .last-section .monami-news .news-list img{
+  width: 164px;
+  height: 116px;
+  
+}
+main .last-section .monami-news .monami-news-first{
+  display: flex;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #b3b3b3;
+}
+main .last-section .monami-news .monami-news-first .monami-news-text{
+
+  margin-top: 10px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+  
+}
+main .last-section .monami-news .monami-news-first article{
+  font-size: 20px;
+  font-weight: 500;
+}
+main .last-section .monami-news .monami-news-first h6{
+  color: #555;
+  font-size: 13px;
+  margin-top: 10px;
+  line-height: 1.5;
+  font-weight: 520;
+}
+main .last-section .monami-news .monami-news-first .date{
+  
+  color: #898989;
+  font-size: 14px;
+  text-align: right;
+}
+main .last-section .monami-news .monami-news-second{
+  margin-top: 15px;
+  font-size: 13px;
+  color: #555;
+  font-weight: 520;
+  display: flex;
+  justify-content: space-between;
+
+  
+}
+main .last-section .monami-news .monami-news-second li{
+  margin-bottom: 10px;
+}
+main .last-section .monami-news .monami-news-second-date{
+  color: #898989;
+  font-size: 14px;
+  
+}
+
+main .last-section .inquiry{
+  width: 18%;
+  background: url(https://www.monami.com/images/main/inquiry_bg.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #ddd;
+  border-right:1px solid #ddd;
+} 
+main .last-section .inquiry img{
+  width: 40px;
+  height: 40px;
+}
+main .last-section .text{
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 550;
+  text-align: center;
+}
+main .last-section .line{
+  border-bottom: 4px solid #C40F39;
+  width: 25px;
+  margin-top: 10px;
+  margin-left: 110px;
+ 
+  
+}
+main .last-section .text h3{
+  color: #555;
+  font-size: 13px;
+  margin-top: 20px;
+  line-height: 1.4;
+  font-weight: 300;
+
+}
+main .last-section .inquiry button{
+  margin-top: 40px;
+  width: 170px;
+  height: 40px;
+  font-size: 17px;
+  color: #C40F39;
+  border:2px solid #C40F39;
+  border-radius: 20px;
+  background: url(https://www.monami.com/images/main/inquiry_bg.jpg) ;
+}
+main .last-section .inquiry button:hover{
+  background: #C40F39;
+  color: white;
+}
+
+main .last-section .brand-store{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18%;
+  background: url(https://www.monami.com/images/main/shop_bg.png);
+  
+  border-right:1px solid #ddd;
+}
+main .last-section .brand-store button{
+  margin-top: 40px;
+  width: 170px;
+  height: 40px;
+  font-size: 17px;
+  color: #C40F39;
+  border:2px solid #C40F39;
+  border-radius: 20px;
+  background: url(https://www.monami.com/images/main/shop_bg.png);
+}
+main .last-section .brand-store button:hover{
+  background: #C40F39;
+  color: white;
+}
+footer{
+  background: black;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 250px 50px 250px;
+}
+footer .footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2c2b2b;
+  padding-bottom: 20px;
+
+}
+footer .footer-top .rules{
+  height: 14px;
+  display: flex;
+  color: #7d7d7d;
+  font-size: 13px;
+  
+}
+footer .footer-top .rules li{
+  padding-right: 10px;
+  padding-left: 10px;
+  border-right: 1px solid #7d7d7d;
+}
+footer .footer-top .rules li.email{
+  border: none;
+}
+footer .footer-top .rules .bright{
+  font-weight: 600;
+  color: #bcbcbc;
+}
+footer .footer-bottom{
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  }
+footer .footer-bottom .info{
+  width: 40%;
+}
+footer .footer-bottom .info-title{
+  color: #eee;
+  font-size: 14px;
+
+}
+footer .footer-bottom p{
+  margin-top: 20px;
+  color: #555;
+  font-size: 13px;
+}
+footer .footer-bottom .copy-right{
+  margin-top: 10px;
+  font-size: 11px;
+  color: #555;
+}
+footer .customer-center{
+  width: 20%;
+  display:flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+
+}
+footer .customer-center .customer-center-title{
+  color: #eee;
+  font-size: 14px;
+  text-align: center;
+}
+footer .customer-center .customer-number{
+  
+  color: #555;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+}
+footer .customer-center .kakao{
+  margin-top: 20px;
+  border: 0.5px solid #898989;
+  border-radius: 5px;
+  font-size: 13px;
+  color: white;
+  width: 150px;
+  height: 30px;
+text-align: center;
+padding-top: 7px;
+background: #4a4a4a;
+}
+footer .family-site{
+  width: 40%;
+  text-align: right;
+  
+}
+footer .family-site select{
+  width: 250px;
+  height: 35px;
+  background: black;
+  color:rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  padding-left: 10px;
+}
